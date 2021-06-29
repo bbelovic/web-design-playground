@@ -1,8 +1,4 @@
-<!--
-    #f4cccc
-    #cdf4e7
-    #cde7f4
--->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,7 +13,18 @@
             }
             h1 {
                 font-size: 52px;
-                color: #f4cccc;
+                color: #674ea7;
+            }
+            a {
+                color: #a6a24e;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #70a64e;
+                text-decoration: underline;
+            }
+            ul {
+                list-style-image: url(checkmark.png);
             }
         </style>
     </head>
@@ -26,25 +33,31 @@
             <h1>Boris Belovič</h1>
             <h2>Senior software engineer</h2>
             <hr>
-            <h3>Social media links</h3>
+            <h3><a href="https://github.com/bbelovic">Github</a> | <a href="https://twitter.com/bbelovic">Twitter</a> | 
+                <a href="https://www.linkedin.com/in/borisbelovic/">LinkedIn</a> | <a href="https://www.facebook.com/bbelovic">Facebook</a> |</h3>
             <hr>
         </div>
-        <div>
+        <div style="font-family: Georgia, serif;">
+            <figure>
+                <img src="atomic.png" alt="Atomic" title="Atomic title"/>
+                <figcaption>Figure 1</figcaption>
+            </figure>
+            
             <p>
-                First text block
+                I'm software developer interested in Java and JVM languages with passion for TDD and clean code.
             </p>
             <p>
-                Second text block
+                Technologies & languages 
             </p>
             <ul>
                 <li>
-                    aaa
+                    Java
                 </li>
                 <li>
-                    bbb
+                    Kotlin
                 </li>
                 <li>
-                    ccc
+                    Spring Boot
                 </li>
             </ul>
         </div>
