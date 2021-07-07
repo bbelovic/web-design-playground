@@ -2,3 +2,18 @@
     background-color: burlywood;
     float: right;
 }
+.sbox {
+    border: 1px solid orangered;
+    background-color: lightcyan;
+    width: 675px;
+}
+
+.col {
+    width: 300px;
+    float: left;
+}
+.self-clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
