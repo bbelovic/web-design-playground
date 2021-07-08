@@ -17,3 +17,29 @@
     display: block;
     clear: both;
 }
+.first-paragraph::first-letter {
+    color: darkred;
+    float: left;
+    font-size: 5em;
+    padding-top: .1m;
+    padding-right: .1em;
+    line-height: .6em;
+}
+.pullquote {
+    float: right;
+    width: 50%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 1.05em;
+    color: #666;
+    font-style: italic;
+    padding-top: .5em;
+    margin: 1.25em 0 1em .25em;
+}
+.pullquote::before {
+    content: "\0201c";
+    float: left;
+    padding: .1em .2em .4em 0;
+    font-size: 5em;
+    line-height: .45em;
+}
