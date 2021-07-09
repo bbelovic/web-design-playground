@@ -1,0 +1,14 @@
+h1, div {
+    position: relative;
+    z-index: 2;
+    border: burlywood 2px solid;
+}
+
+
+.abs-position {
+    position: absolute;
+    z-index: -1;
+    background-color: chocolate;
+    top: 10px;
+    left: 20px;
+}
