@@ -3,10 +3,20 @@
     <head>
         <meta charset="utf-8">
         <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                line-height: 1.3;
+            }
+            body {
+                font-family: Optima, Calibri, sans-serif;
+            }
             .header {
                 background: url(./night-lamp.gif);
                 background-position: right center;
                 background-attachment: fixed;
+                background-size: cover;
                 padding-bottom: 1em;
                 width: 100vw;
                 height: 100vh;
@@ -14,10 +24,31 @@
 
             .header-image {
                 float: left;
-                width: 33%;
+                width: 23%;
                 margin-top: 3em;
                 padding-right: 3em;
                 text-align: right;
+                border: 1px plum solid;
+            }
+            .header-info {
+                float: right;
+                width: 67%;
+                color: white;
+                margin-top: 3em;
+                border: 1px plum solid;
+            }
+            .surtitle {
+                font-weight: bold;
+                font-variant: small-caps;
+            }
+            .subtitle {
+                margin: 0.5em 0 1.5em;
+                font-size: 1.25em;
+                border: 1px plum solid;
+            }
+            .intro {
+                margin: 0.5em 0 1.5em;
+                font-size: 1.25em;
                 border: 1px plum solid;
             }
         </style>
@@ -26,6 +57,19 @@
         <div class="header">
             <div class="header-image">
                 <img src="http://placehold.it/240x400" alt="placeholder image"/>
+            </div>
+            <div class="header-info">
+                <div class="surtitle">
+                    Don't miss!
+                </div>
+                <h1>Boris Belovič</h1>
+                <div class="subtitle">
+                    Experienced Java developer and Kotlin enthusiast
+                </div>
+                <div class="intro">
+                    Skilled Java developer with strong interest in wider JVM ecosystem. Recently gaining skills in Kotlin and Typescript. Offering my knowledge portfolio
+                    to you at fair price.
+                </div>
             </div>
 
         </div>
