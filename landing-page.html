@@ -67,6 +67,13 @@
                 margin: 0 auto;
                 clear: both;
             }
+
+            .container::after {
+               content: "";
+                display: block;
+                clear: both;
+            }
+
             .testimonials {
                 width: 100%;
                 padding: 1em 0;
@@ -132,7 +139,7 @@
                 margin-top: .75em;
             }
             .social-link {
-                margin: 0 .25em;
+                margin: 2em .25em;
             }
         </style>
     </head>
@@ -228,12 +235,8 @@
             </div>
             
             <div class="social-links">
-                <a href="#" class="social-link">
-                    <img src="twitter.png" width="50" height="50"/>
-                </a>
-                <a href="#" class="social-link">
-                    <img src="linkedin.png" width="70" height="50"/>
-                </a>
+                <a href="#" class="social-link"><img src="linkedin.png" width="70" height="50"/></a>
+                <a href="#" class="social-link"><img src="twitter.png" width="50" height="50"/></a>
             </div>
         </div>
 
