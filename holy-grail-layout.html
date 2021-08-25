@@ -5,9 +5,22 @@
         <style>
             header {
                 background-color: lightgreen;
+                border: 1px solid black;
+            }
+            header img {
+                float: left;
+            }
+            header h1 {
+                float: left;
             }
             nav {
                 background-color: lightpink;
+            }
+            nav ul {
+                list-style-type: none;
+            }
+            nav li {
+                float: left;
             }
             main {
                 background-color: lightsalmon;
@@ -15,14 +28,27 @@
             section {
                 background-color: lightyellow;
             }
+            .self-clear::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
         </style>
     </head>
     <body>
-        <header>
-            &lt;header&gt;
+        <header class="self-clear">
+            <img src="http://placehold.it/40x40" alt="placeholder image"/>
+            <h1>&lt;header&gt;</h1>
         </header>
-        <nav>
-            &lt;nav&gt;
+        <nav class="self-clear">
+            <ul>
+                <li>
+                    Add resource
+                </li>
+                <li>
+                    Add resource
+                </li>
+            </ul>
         </nav>
         <main>
             &lt;main&gt;
@@ -32,6 +58,9 @@
                     &lt;section&gt;
                 </section>
             </article>
+            <aside>
+                &lt;aside&gt;
+            </aside>
         </main>
     </body>
 </html>
