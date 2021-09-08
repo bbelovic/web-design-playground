@@ -5,6 +5,14 @@
         <style>
             .container {
                 display: flex;
+                border: 1px solid black;
+            }
+            .container-height {
+                height: 164px;
+                align-items: flex-end;
+            }
+            .content {
+                justify-content: space-around;
             }
             .row-reverse {
                 flex-direction: row-reverse;
@@ -23,6 +31,30 @@
                 text-align: center;
                 padding: 0.1em;
             }
+            .item2 {
+                border: 1px solid black;
+                text-align: center;
+                color: blanchedalmond;
+            }
+
+            .item2-crimson {
+                background-color: crimson;
+            }
+
+            .item2-darkmagenta {
+                background-color: darkmagenta;
+            }
+
+            .item2-darkblue {
+                background-color: darkblue;
+            }
+            .item2-darkgreen {
+                background-color: darkgreen;
+            }
+            .item2-saddlebrown {
+                background-color: saddlebrown;
+            }
+
             .itemA {
                 background-color: red;
             }
@@ -32,31 +64,51 @@
             .itemC {
                 background-color: yellow;
             }
+            .space {                
+                margin-top: 30px;
+            }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container content">
             <div class="item itemA">A</div>
             <div class="item itemB">B</div>
             <div class="item itemC">C</div>
         </div>
-        <div class="container row-reverse">
+        <div class="container row-reverse space">
             <div class="item itemA">A</div>
             <div class="item itemB">B</div>
             <div class="item itemC">C</div>
         </div>
 
-        <div class="container col">
+        <div class="container col space">
             <div class="item itemA">A</div>
             <div class="item itemB">B</div>
             <div class="item itemC">C</div>
         </div>
-        <div class="container col-reverse">
+        <div class="container col-reverse space">
             <div class="item itemA">A</div>
             <div class="item itemB">B</div>
             <div class="item itemC">C</div>
         </div>
         
+        <div class="container container-height space">
+            <div class="item2 item2-crimson">
+                Williams-Sonoma is a home products and furnishings retailer with a market cap of $14 billion.
+            </div>
+            <div class="item2 item2-darkmagenta">
+                These furnishings are provided across a range of branded retailers that include Pottery Barn, West Elm, and the eponymous Williams-Sonoma.
+            </div>
+            <div class="item2 item2-darkblue">
+                Well, the business is just as high quality as its furnishings are, thanks in no small part to the fact that they carry no long-term debt whatsoever.
+            </div>
+            <div class="item2 item2-darkgreen">
+                The balance sheet is as sparkling clean as linens from West Elm.
+            </div>
+            <div class="item2 item2-saddlebrown">
+                And that helps to give the company the ability to hand out sizable dividend increases to shareholders.
+            </div>
+        </div>
 
     </body>
 </html>
